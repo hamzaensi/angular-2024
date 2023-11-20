@@ -1,0 +1,12 @@
+a{
+    color: brown;
+    padding-right: 50px;
+}
+div {
+    text-align: center;
+}
+a:hover{
+
+    background-color: blue;
+
+}

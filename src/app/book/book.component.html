@@ -1,0 +1,17 @@
+
+
+
+
+<div [ngClass]="{ 'enPromo': book.enPromo }" class="col-fourth">
+<p>{{book.title}}</p>    
+<p>{{book.author | uppercase }}</p>    
+<p>{{book.edition | lowercase }}</p>    
+<p>{{book.price}}</p>    
+<p>{{book.dateDeSortie |  date: 'dd/MM/yy, à HH:mm:ss' }}</p>    
+<p>{{book.enPromo}}</p>    
+
+<button *ngIf="!book.enPromo" (click)="enPromo()">En promo</button>
+<button *ngIf="book.enPromo" (click)="pasEnPromo()">Pas en promo</button>
+
+</div>
+
